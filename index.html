@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Thomassen's Website</title>
+    <style>
+        body {
+            background-color: #f0f8ff; /* Light blue background */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2C3E50; /* Dark blue */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #34495E; /* Slightly lighter blue */
+            overflow: hidden;
+            text-align: center;
+        }
+
+        nav button {
+            background-color: #2C3E50;
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        nav button:hover {
+            background-color: #1ABC9C; /* Hover effect */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        hr {
+            border: 1px solid #ddd;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        footer {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Thomas Thomassen's Website</h1>
+        <p>Computer Science Student | Data Science Enthusiast</p>
+    </header>
+    
+    <nav>
+        <button><a href="#home">Home</a></button>
+        <button><a href="#education">Education</a></button>
+        <button><a href="#skills">Skills</a></button>
+        <button><a href="#projects">Projects</a></button>
+        <button><a href="#work">Work Experience</a></button>
+        <button><a href="#hobbies">About Me</a></button>
+    </nav>
+    
+    <section id="home">
+        <div class="container">
+            <h1>About Thomas Thomassen</h1>
+            <hr>
+            <div style="text-align: center;">
+                <img src="data:image/jpeg;base64,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">
+            </div>
+            <p>I am currently pursuing a Computer Science major and a Data Science minor at Rutgers University, with an expected graduation in May 2027. I am passionate about coding and have experience with Java, Python, R, C, SQL, and various Python libraries, including pandas and NumPy. My academic background has strengthened my foundation in data structures, linear algebra, discrete math, and data wrangling, which I am eager to apply in real-world scenarios.
+                I am particularly interested in data science, especially in sports-related work, and I am actively seeking internship or co-op opportunities where I can contribute my technical skills while learning from experienced professionals. Along with my coding abilities, I bring strong leadership, teamwork, and communication skills, honed through my involvement in extracurricular activities and work experience. As I continue to grow in my field, I’m excited to expand my knowledge and contribute to impactful projects such as this website I built myself using HTML.
+         </p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2 style="text-align: center;">Education</h2>
+       <hr>
+       <h4> Cumulative GPA: 3.5</h4>
+       <hr>
+       <h4> Classes I've Taken</h4>
+       <div style="display: flex; justify-content: space-between; gap: 20px;">
+           <!-- First column -->
+           <div style="width: 48%;">
+             <ul style="list-style-type: none; padding: 0;">
+               <li>Intro to Computer Science</li>
+               <li>Exposition and Argument</li>
+               <li>Calc 2 for math</li>
+               <li>Intermediate Spanish </li>
+               <li>Logic Reason and Persuasion</li>
+               <li> Data 101</li>
+               <li> Molecules of Life</li>
+               <li>Data Structures</li>
+               <li>Intro to Linear Algebra</li>
+             </ul>
+           </div>
+
+
+           <div style="width: 48%;">
+               <ul style="list-style-type: none; padding: 0;">
+                 <li>Discrete Strct 1</li>
+                 <li>Data Managment for Data Science</li>
+                 <li> Computer Architecture</li>
+                 <li> Hisotry of Labor & Work</li>
+                 <li> Black Workers in America</li>
+                 <li> Physics 1 & Lab</li>
+                 <li> Discrete Strct 2</li>
+                 <li> Numerical Analysis Computing</li>
+                 <li> Infresense Statistics for Data Science</li>
+                 <li> Hisotry of Rock & Roll</li>
+               
+               </ul>
+             </div>
+           </div>
+           <br>
+           <hr>
+           <br>
+           <h3> Most Influential Classes</h3>
+           <hr>
+           <p> Among the classes I've taken so far, the ones that have taught me the most are Data Structures, Data Management for Data Science, Data 101, and Discrete Math 1. Data Structures laid the foundation for my coding skills, teaching me how to solve problems using essential structures like arrays, linked lists, and more. Data Management for Data Science introduced me to the crucial processes of data cleaning and working with SQL, along with Python libraries such as pandas, which are invaluable for handling and analyzing data. Data 101 sparked my interest in data science through hands-on projects that involved analyzing data and building prediction models. Finally, Discrete Math 1 sharpened my problem-solving skills by encouraging me to break down complex problems into smaller, manageable parts and approach solutions from different perspectives. </p>
+
+
+       </section>
+       <section id="skills">
+        <div class="container">
+            <h2 style="text-align: center;">My Skills</h2>
+       <hr>
+       <div style="display: flex; justify-content: space-between; gap: 20px;">
+           <!-- First column -->
+           <div style="width: 48%;">
+             <ul style="list-style-type: none; padding: 0;">
+               <li>Python Language</li>
+               <li>Java Language</li>
+               <li>HTML Language</li>
+               <li>Data Cleaning</li>
+               <li>AWS Cloud</li>
+               <li>Calculus 1 & 2</li>
+               <li>Discrete Math</li>
+               <li>Problem Solving</li>
+               <li>Team Oriented Skills</li>
+               <li>Pandas Python Library</li>
+             </ul>
+           </div>
+
+
+           <div style="width: 48%;">
+               <ul style="list-style-type: none; padding: 0;">
+                 <li>C Programing Language</li>
+                 <li>R Programing Language</li>
+                 <li>SQL </li>
+                 <li>Data Wrangling</li>
+                 <li>Linear Algebra</li>
+                 <li>Leadership Skills</li>
+                 <li>Public Speaking</li>
+                 <li>Communication Skills</li>
+                 <li>Customer Service Skills</li>
+                 <li>Numpy Python Library</li>
+                 <li>Git Hub</li>
+               
+               </ul>
+             </div>
+           </div>
+
+
+
+        </div>
+        </section>
+
+
+    <section id="projects">
+        <div class="container">
+            <h1 style="text-align: center;"> Git Hub Project Repository</h1>
+       <hr>
+       <p>
+           Link: <a href="https://github.com/TJ5864/Python-Portfolio" target="_blank">https://github.com/TJ5864/Python-Portfolio</a>
+       </p>
+
+        </div>
+    </section>
+
+    <section id="work">
+        <div class="container">
+            <h2 style="text-align: center;">Work Experience</h2>
+            <hr>
+            <h3 style="text-align: center;"> Orangetheory fitness</h3>
+            <br>
+            <p>At Orangetheory fitness I worked as a sales associate from May 2023 to January 2025. As a sales associate I work on driving up active Orangetheory members, and in doing so I also provide customer service to members. I effectively communicate with both members and non-members throughout the workday. Responsibilities include keeping the studio clean, introducing new members to the studio, selling memberships, and aiding current members with whatever they need. The team-oriented setting has also helped me improve my ability to work in a team, my leadership skills, and my communication skills.</p>
+            <hr>
+            <h3 style="text-align: center;"> Tinton Falls Recreation</h3>
+            <br>
+            <p> I wokred with Tinton Falls as both a summer camp Counselor and as a recreational basketball staff member from July 2022 to August 2024. As a summer camp counselor with Tinton Falls, I demonstrate leadership skills well engaging and overseeing middle school to elementary-aged students. My responsibilities include engaging with campers, creating a safe and fun environment, communicating and coordinating activities with campers and staff members, adaptability, and problem-solving to different camper-related problems. Being a counselor has helped me improve my leadership skills and teamwork skills.
+            </p>
+     
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <div class="container">
+            <h1 style="text-align: center;">About Me</h1>
+<hr>
+<p>Hi, I am Thomas Thomassen, but I go by TJ. I just wanted to describe myself in ways other than my technical skills and education. For starters, I enjoy the outdoors, especially hiking and looking for wildlife. So far, I have had the privilege of visiting different countries and national parks. I have been to both Switzerland and France, and within the United States, I have visited several national parks, including Yosemite, Glacier, Yellowstone, Grand Canyon, Smoky Mountains, Arches, and a few smaller parks. Building on this, I also love sports. I enjoy both playing and watching basketball and football. With this in mind, I hope to have a career where I can use my skills in software development and data science to contribute to a professional team or league. In addition to both sports and the outdoors, I am also interested in technology, specifically the use of AI in our daily lives. I am planning on taking a few courses in regards to AI at Rutgers, but I just wanted to put this out there as something that piques my interest.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Thomas Thomassen | All rights reserved.</p>
+    </footer>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
